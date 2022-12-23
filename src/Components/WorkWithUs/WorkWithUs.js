@@ -4,15 +4,15 @@ const WorkWithUs = () => {
   return (
     <div className='bg-[#061237] mt-[162px]'>
       <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
-        <div className='flex justify-between'>
-          <h1 className='text-4xl text-white font-bold'>
+        <div className='block lg:flex text-center items-center mb-20 lg:justify-between'>
+          <h1 className='text-4xl font-bold text-white '>
             Ways to work with us
           </h1>
-          <button class='w-full px-6 py-3 mt-1 text-sm font-bold tracking-wide text-white transition-none bg-[#1355FF] hover:bg-[#0037c1] sm:mt-0 sm:w-auto sm:flex-shrink-0'>
+          <button class=' px-6 py-3 mt-3 lg:mt-1 text-sm font-bold tracking-wide text-white transition-none bg-[#1355FF] hover:bg-[#0037c1] sm:mt-0 sm:w-auto sm:flex-shrink-0'>
             Get Started
           </button>
         </div>
-        <div className='grid gap-5 row-gap-5 mb-8 lg:grid-cols-3 sm:grid-cols-1 mx-auto justify-center items-center text-center'>
+        <div className='grid gap-5 row-gap-5 mb-8 lg:grid-cols-3 sm:grid-cols-1 mx-auto justify-center items-center text-center ml-0 lg:ml-16'>
           <a
             href='/'
             aria-label='View Item'
@@ -25,10 +25,10 @@ const WorkWithUs = () => {
               />
               <div className=' border-none w-72'>
                 <div className=''>
-                  <h6 className='mb-2 font-bold text-2xl text-white'>
+                  <h6 className='mb-2 font-bold text-2xl text-white text-start'>
                     Project Management
                   </h6>
-                  <h1 className='text-sm text-[#B6BCCE]'>
+                  <h1 className='text-sm text-[#B6BCCE] text-start'>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Accusamus animi laudantium deserunt est dolorem vitae!
                   </h1>
@@ -48,10 +48,10 @@ const WorkWithUs = () => {
               />
               <div className=' border-none w-72'>
                 <div className=''>
-                  <h6 className='mb-2 font-bold text-2xl text-white'>
+                  <h6 className='mb-2 font-bold text-2xl text-white text-start'>
                     Advanced Analytics
                   </h6>
-                  <h1 className='text-sm text-[#B6BCCE]'>
+                  <h1 className='text-sm text-[#B6BCCE] text-start'>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Accusamus animi laudantium deserunt est dolorem vitae!
                   </h1>
@@ -71,10 +71,10 @@ const WorkWithUs = () => {
               />
               <div className=' border-none w-72'>
                 <div className=''>
-                  <h6 className='mb-2 font-bold text-2xl text-white'>
+                  <h6 className='mb-2 font-bold text-2xl text-white text-start'>
                     Marketing & Dashboard
                   </h6>
-                  <h1 className='text-sm text-[#B6BCCE]'>
+                  <h1 className='text-sm text-[#B6BCCE] text-start'>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Accusamus animi laudantium deserunt est dolorem vitae!
                   </h1>
@@ -83,13 +83,7 @@ const WorkWithUs = () => {
             </div>
           </a>
         </div>
-        <div className='text-center'>
-          <a
-            href='/'
-            className='inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none'>
-            Learn more
-          </a>
-        </div>
+        <div className='text-center'></div>
       </div>
     </div>
   );

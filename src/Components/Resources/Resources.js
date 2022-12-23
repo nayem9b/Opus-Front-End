@@ -7,9 +7,9 @@ const Resources = () => {
   return (
     <div>
       <div className='max-w-screen-xl mx-auto'>
-        <div className='flex justify-between'>
-          <h1 className='text-4xl font-bold'>Resources</h1>
-          <button class='w-full px-6 py-3 mt-1 text-sm font-bold tracking-wide text-white transition-none bg-[#1355FF] hover:bg-[#0037c1] sm:mt-0 sm:w-auto sm:flex-shrink-0'>
+        <div className='block lg:flex text-center items-center  lg:justify-between'>
+          <h1 className='text-4xl font-bold  '>Resources</h1>
+          <button class=' px-6 py-3 mt-3 lg:mt-1 text-sm font-bold tracking-wide text-white transition-none bg-[#1355FF] hover:bg-[#0037c1] sm:mt-0 sm:w-auto sm:flex-shrink-0'>
             Get Started
           </button>
         </div>
