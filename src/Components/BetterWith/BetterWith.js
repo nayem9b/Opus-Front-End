@@ -24,7 +24,7 @@ const BetterWith = () => {
           </div>
         </div>
 
-        <div className='grid grid-rows-2 gap-5  mt-[40px] lg:mt-0'>
+        <div className='grid grid-rows-2 gap-5  mt-[40px] lg:mt-0 ml-28'>
           <div className='absolute ml-36 bg-[#F2F3F8] h-[496px] w-[342px] '></div>
           <div className='w-[418px] h-[184px] bg-white relative'>
             <div className=' text-3xl font-bold ml-10 mt-8 mb-8'>

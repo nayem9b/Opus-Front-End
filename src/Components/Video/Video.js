@@ -33,14 +33,14 @@ const Video = () => {
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowfullscreen></iframe>
       </div>
-      <div className='grid grid-cols-2'>
+      <div className='grid grid-cols-1 lg:grid-cols-2'>
         <div></div>
         <div className='w-3/4'>
-          <h1 className='text-[#37456C]'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-            repellat quibusdam deserunt, autem dolorum blanditiis quam ad,
-            reprehenderit error suscipit atque in vitae repellendus labore minus
-            dicta dolore ipsum architecto?
+          <h1 className='text-[#37456C] ml-16 lg:ml-0'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Accusantium dolorem nihil dignissimos quae, sapiente eos quasi ut
+            eveniet cum, iure, laudantium veniam! Amet rerum, deleniti totam
+            expedita placeat maiores iure.
           </h1>
         </div>
       </div>

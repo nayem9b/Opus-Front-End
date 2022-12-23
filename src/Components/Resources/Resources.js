@@ -13,7 +13,7 @@ const Resources = () => {
             Get Started
           </button>
         </div>
-        <div className='mt-20 grid grid-cols-1 lg:grid-cols-3  gap-x-5'>
+        <div className='mt-20 grid grid-cols-1 lg:grid-cols-3  gap-x-2 lg:gap-x-5'>
           <Card1></Card1>
           <Card2></Card2>
           <Card3></Card3>
