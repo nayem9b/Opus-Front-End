@@ -5,8 +5,8 @@ import { BiDetail } from "react-icons/bi";
 const Features = () => {
   return (
     <div>
-      <section class='px-4 py-24 mx-auto max-w-7xl'>
-        <div class='grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24'>
+      <section class='px-4  mx-auto max-w-7xl'>
+        <div class='grid items-center grid-cols-1 md:grid-cols-2 '>
           <div>
             <h2 class='mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl'>
               You’re not just doing business. You’re doing life.
@@ -28,14 +28,14 @@ const Features = () => {
               </div>
             </p>
           </div>
-          <div class='w-full h-full py-48 '>
+          <div class='w-full h-full '>
             <img src={woman1} alt='' />
           </div>
         </div>
-        <div class='grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24'>
-          <div class='order-none md:order-2'>
-            <h2 class='mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl'>
-              A UI kit thats mordern and eligent
+        <div class='grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2'>
+          <div class='order-none md:order-2 lg:ml-40'>
+            <h2 class='mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl '>
+              A UI kit that's <br /> mordern and eligent
             </h2>
             <p class='mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
@@ -44,14 +44,14 @@ const Features = () => {
               obcaecati, voluptas numquam aperiam?
             </p>
           </div>
-          <div class='w-full h-full py-48 '>
+          <div class='object-cover pt-[270px] '>
             <img
-              src='https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
+              src='https://images.unsplash.com/photo-1630004184878-c60794d1c105?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=916&q=80'
               alt=''
             />
           </div>
         </div>
-        <div class='grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24'>
+        <div class='grid items-center grid-cols-1  md:grid-cols-2 '>
           <div>
             {/* <h2 class='mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl'>
               Clear overview for efficient tracking
@@ -60,16 +60,27 @@ const Features = () => {
               <BiDetail className='text-3xl font-bold'></BiDetail>
               <h1 className='text-lg font-bold'>Stamps</h1>
             </div>
-            <p class='mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg'>
-              Handle your subscriptions and transactions efficiently with the
-              clear overview in Dashboard. Features like the smart search option
-              allow you to quickly find any data you’re looking for.
-            </p>
-            <a href='#' class='w-full btn btn-dark btn-lg sm:w-auto'>
-              Learn More
-            </a>
+            <h1 class='mb-5  font-bold text-2xl text-[#333333] sm:text-left md:text-lg'>
+              The Opus UI kit lets you <br /> showcase your work in style.{" "}
+              <br /> It helped take our business online
+            </h1>
+            <div>
+              <h1>ALEXA F.</h1>
+              <h1 className='text-xs font-bold'>
+                DESIGNER{" "}
+                <span className='text-[#1355FF]  text-xs font-bold'>
+                  @ STAMPS
+                </span>{" "}
+              </h1>
+            </div>
           </div>
-          <div class='w-full h-full py-48 bg-gray-200'></div>
+          <div class='w-full h-full py-48'>
+            <img
+              className=' obejct-fit'
+              src='https://images.unsplash.com/photo-1560096434-c1cec8609cc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
+              alt=''
+            />
+          </div>
         </div>
       </section>
     </div>

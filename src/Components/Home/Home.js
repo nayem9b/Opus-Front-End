@@ -1,5 +1,6 @@
 import React from "react";
 import BetterWith from "../BetterWith/BetterWith";
+import Createpage from "../CreatePage/Createpage";
 
 import Features from "../Features/Features";
 import Footer from "../Footer/Footer";
@@ -9,6 +10,7 @@ import Resources from "../Resources/Resources";
 import Stats from "../Stats/Stats";
 import TrustedBy from "../TruestedBy/TrustedBy";
 import Video from "../Video/Video";
+import WorkWithUs from "../WorkWithUs/WorkWithUs";
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
       <Stats></Stats>
       <Video></Video>
       <BetterWith></BetterWith>
+      <WorkWithUs></WorkWithUs>
+      <Createpage></Createpage>
       <Features></Features>
       <Resources></Resources>
 

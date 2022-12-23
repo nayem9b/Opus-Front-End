@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = () => {
+const Card3 = () => {
   return (
     <div>
       <article class='overflow-hidden rounded-lg shadow-sm'>
@@ -13,16 +13,14 @@ const Card = () => {
         <div class='p-4 sm:p-6'>
           <a href='#'>
             <h3 class='text-lg font-medium text-gray-900'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Opus made our journey <br /> possible
             </h3>
           </a>
 
           <p class='mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            dolores, possimus pariatur animi temporibus nesciunt praesentium
-            dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque
-            minus soluta, voluptates neque explicabo tempora nisi culpa eius
-            atque dignissimos. Molestias explicabo corporis voluptatem?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+            incidunt similique accusamus voluptate repudiandae quo veritatis
+            itaque explicabo culpa officia.
           </p>
 
           <button className='px-[34px] py-[13px] bg-[#F7F9FC] hover:bg-[#b7b8b9]'>
@@ -34,4 +32,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Card3;

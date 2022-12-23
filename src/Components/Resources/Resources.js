@@ -1,5 +1,7 @@
 import React from "react";
-import Card from "./Card";
+import Card1 from "./Card1";
+import Card2 from "./Card2";
+import Card3 from "./Card3";
 
 const Resources = () => {
   return (
@@ -12,9 +14,9 @@ const Resources = () => {
           </button>
         </div>
         <div className='mt-20 grid grid-cols-3 gap-20'>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
+          <Card1></Card1>
+          <Card2></Card2>
+          <Card3></Card3>
         </div>
       </div>
     </div>

@@ -3,8 +3,8 @@ import logo from "../Assets/company-logo.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div>
-      <div class='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+    <div className='sticky top-0 h-16 bg-white z-50'>
+      <div class=' px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
         <div class='relative flex items-center justify-between'>
           <a
             href='/'
