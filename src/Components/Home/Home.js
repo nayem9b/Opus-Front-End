@@ -1,4 +1,5 @@
 import React from "react";
+import BetterWith from "../BetterWith/BetterWith";
 
 import Features from "../Features/Features";
 import Footer from "../Footer/Footer";
@@ -17,6 +18,7 @@ const Home = () => {
       <TrustedBy></TrustedBy>
       <Stats></Stats>
       <Video></Video>
+      <BetterWith></BetterWith>
       <Features></Features>
       <Resources></Resources>
 
