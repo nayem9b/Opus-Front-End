@@ -8,33 +8,33 @@ const TrustedBy = () => {
           Trusted and loved by the world’s best teams
         </h1>
 
-        <div class='grid grid-cols-2 gap-16 mb-16 text-center lg:grid-cols-4'>
+        <div class='grid grid-cols-1 gap-16 mb-16 text-center lg:grid-cols-4'>
           <div class='flex items-center justify-center'>
             <img
-              class='h-4 mx-auto lg:h-12'
+              class=' mx-auto h-12'
               src='https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png'
-              alt=''
+              alt='GOOGLE'
             />
           </div>
           <div class='flex items-center justify-center'>
             <img
-              class='h-4 mx-auto lg:h-12'
+              class='mx-auto h-12'
               src='https://res.cloudinary.com/hilnmyskv/image/upload/q_70/v1669902575/Algolia_com_Website_assets/images/shared/algolia_logo/algolia_logo_full_blue.svg'
-              alt='Slack Logo'
+              alt='Algolia'
             />
           </div>
           <div class='flex items-center justify-center'>
             <img
               src='https://1000logos.net/wp-content/uploads/2021/06/Slack-Logo-2013.png'
-              alt='Typeform Logo'
-              class='h-4 mx-auto lg:h-20'
+              alt='Slack'
+              class='mx-auto h-20'
             />
           </div>
           <div class='flex items-center justify-center'>
             <img
-              src='https://download.logo.wine/logo/Jira_(software)/Jira_(software)-Logo.wine.png'
-              alt='Algolia Logo'
-              class='h-4 mx-auto lg:h-48'
+              src='https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png'
+              alt='Jira'
+              class=' mx-auto h-12 '
             />
           </div>
         </div>

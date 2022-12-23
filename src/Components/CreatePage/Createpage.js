@@ -9,8 +9,14 @@ const Createpage = () => {
         <div>
           <div className='flex'>
             <div className='mouse'>
-              <FaPaperPlane className='text-white m-10 bg-[#1355FF]'></FaPaperPlane>
-              <BsCardImage className='text-white m-10 bg-[#1355FF]'></BsCardImage>
+              <div className='bg-[#1355FF] px-6 py-6'>
+                {" "}
+                <FaPaperPlane className='text-white  text-center justify-center items-center mx-auto'></FaPaperPlane>
+              </div>
+              <div className='bg-[#1355FF] px-6 py-6 my-8'>
+                {" "}
+                <BsCardImage className='text-white  text-center justify-center items-center mx-auto'></BsCardImage>
+              </div>
             </div>
             <div className='grid grid-rows-2'>
               <h1 className='text-3xl font-semibold'>

@@ -15,8 +15,18 @@ const Video = () => {
       </h1>
       <div className=' mt-14 flex mx-auto justify-center '>
         <iframe
+          className='hidden lg:block'
           width='992'
           height='550'
+          src='https://www.youtube.com/embed/bbv_m8kFXX4'
+          title='YouTube video player'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowfullscreen></iframe>
+        <iframe
+          className='sm:block lg:hidden'
+          width='351'
+          height='300'
           src='https://www.youtube.com/embed/bbv_m8kFXX4'
           title='YouTube video player'
           frameborder='0'

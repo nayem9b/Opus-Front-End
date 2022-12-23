@@ -4,32 +4,29 @@ import { RiRocketLine } from "react-icons/ri";
 
 const BetterWith = () => {
   return (
-    <div className='max-w-screen-xl mx-auto'>
-      <div className='grid grid-cols-2'>
+    <div className='max-w-screen-xl mx-auto mt-[203px]'>
+      <div className='grid grid-cols-1 lg:grid-cols-2'>
         <div>
-          <h1 className='text-4xl font-bold'>
+          <h1 className='text-4xl font-bold sm:text-5xl'>
             Make your site <br />
             better with Opus
           </h1>
-          <div className='grid grid-rows-2'>
-            <h1>
+          <div className='grid grid-rows-2 lg:ml-16 mt-2'>
+            <h1 className='text-justify'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur recusandae, fugiat itaque, corporis odio ab tenetur
               quibusdam nihil cumque explicabo dignissimos quasi tempore. Modi
               quod ullam reprehenderit? Unde, repudiandae aperiam.
             </h1>
-            <button className='px-10 py-3 w-60 bg-blue-700 text-white'>
+            <button className=' w-40 h-12 font-medium text-sm bg-blue-700 text-white mt-14'>
               Learn More
             </button>
           </div>
         </div>
 
-        <div className='grid grid-rows-2 gap-5'>
-          <div className='absolute ml-36 bg-blue-600 h-[496px] w-[342px] '>
-            {" "}
-            hello
-          </div>
-          <div className='w-[418px] h-[184px] bg-yellow-400 relative'>
+        <div className='grid grid-rows-2 gap-5  mt-[40px] lg:mt-0'>
+          <div className='absolute ml-36 bg-[#F2F3F8] h-[496px] w-[342px] '></div>
+          <div className='w-[418px] h-[184px] bg-white relative'>
             <div className=' text-3xl font-bold ml-10 mt-8 mb-8'>
               <div className='grid grid-rows-2 gap-y-1'>
                 <FaMousePointer className='text-[#1355FF]'></FaMousePointer>
@@ -39,7 +36,7 @@ const BetterWith = () => {
               </div>
             </div>
           </div>
-          <div className='w-[418px] h-[184px] bg-yellow-400 relative'>
+          <div className='w-[418px] h-[184px] bg-white relative'>
             <div className=' text-3xl font-bold ml-10 mt-8 mb-8'>
               <div className='grid grid-rows-2 gap-y-1'>
                 <RiRocketLine className='text-[#1355FF]'></RiRocketLine>
