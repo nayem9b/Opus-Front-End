@@ -1,6 +1,12 @@
 import React from "react";
-
+import toast, { Toaster } from "react-hot-toast";
 const Contact = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    toast.success("Your message has received");
+    form.reset();
+  };
   return (
     <div>
       <section class='min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 '>
@@ -37,7 +43,7 @@ const Contact = () => {
                   </svg>
 
                   <span class='mx-2 text-white truncate w-72'>
-                    Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522
+                    Dinajpur, Bangladesh
                   </span>
                 </p>
 
@@ -57,7 +63,7 @@ const Contact = () => {
                   </svg>
 
                   <span class='mx-2 text-white truncate w-72'>
-                    (257) 563-7401
+                    +880 1755 299 400
                   </span>
                 </p>
 
@@ -77,7 +83,7 @@ const Contact = () => {
                   </svg>
 
                   <span class='mx-2 text-white truncate w-72'>
-                    acb@example.com
+                    razwanniam@gmail.com
                   </span>
                 </p>
               </div>
@@ -160,7 +166,7 @@ const Contact = () => {
                   Contact form
                 </h1>
 
-                <form class='mt-6'>
+                <form onSubmit={handleSubmit} class='mt-6'>
                   <div class='flex-1'>
                     <label class='block mb-2 text-sm text-gray-600 dark:text-gray-200'>
                       Full Name

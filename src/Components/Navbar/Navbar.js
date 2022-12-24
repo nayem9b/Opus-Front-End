@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../Assets/company-logo.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className='sticky top-0 h-16 bg-white z-50'>
       <div class=' px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
-        <div class='relative flex items-center justify-between'>
+        <div class='relative flex items-center justify-between mx-auto text-center'>
           <a
             href='/'
             aria-label='OPUS'
@@ -16,7 +17,7 @@ const Navbar = () => {
               OPUS
             </span>
           </a>
-          <ul class='flex items-center hidden space-x-8 lg:flex'>
+          <ul class='flex items-center hidden space-x-8 lg:flex  flex items-center justify-between mx-auto text-center'>
             <li>
               <a
                 href='/'
@@ -53,16 +54,16 @@ const Navbar = () => {
                 About us
               </a>
             </li>
-            <li>
-              <a
-                href='/'
-                class='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#1355FF] hover:bg-[#0644e2] focus:shadow-outline focus:outline-none'
-                aria-label='     Contact us'
-                title='     Contact us'>
-                Contact us
-              </a>
-            </li>
           </ul>
+
+          <Link
+            to='/contact'
+            class='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#1355FF] hover:bg-[#0644e2] focus:shadow-outline focus:outline-none'
+            aria-label='     Contact us'
+            title='     Contact us'>
+            Contact us
+          </Link>
+
           <div class='lg:hidden'>
             <button
               aria-label='Open Menu'

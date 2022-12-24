@@ -15,7 +15,6 @@ import WorkWithUs from "../WorkWithUs/WorkWithUs";
 const Home = () => {
   return (
     <div>
-      <Navbar></Navbar>
       <Header></Header>
       <TrustedBy></TrustedBy>
       <Stats></Stats>
@@ -25,8 +24,6 @@ const Home = () => {
       <Createpage></Createpage>
       <Features></Features>
       <Resources></Resources>
-
-      <Footer></Footer>
     </div>
   );
 };
