@@ -3,14 +3,14 @@ import React from "react";
 const Video = () => {
   return (
     <div className='max-w-screen-xl mx-auto mt-52'>
-      <div className='flex'>
+      <div className='flex mx-4 lg:mx-0'>
         <div className='h-16 w-16 bg-[#F7F9FC] absolute'></div>
         <h1 className='text-gray-500 uppercase relative ml-5 mt-5'>
           Video Title
         </h1>
       </div>
 
-      <h1 className='text-4xl font-semibold mt-8 '>
+      <h1 className='text-4xl font-semibold mt-8 mx-4 lg:mx-0'>
         Inform users with video sections
       </h1>
       <div className=' mt-14 flex mx-auto justify-center '>

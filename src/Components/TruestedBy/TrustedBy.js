@@ -3,8 +3,8 @@ import React from "react";
 const TrustedBy = () => {
   return (
     <div>
-      <section class='px-4 mx-auto max-w-7xl mt-24'>
-        <h1 class=' text-3xl font-bold leading-tight text-center text-gray-900 md:text-4xl mb-24 mt-48 '>
+      <section class=' mx-auto max-w-7xl mt-24'>
+        <h1 class=' text-3xl font-bold leading-tight text-center text-gray-900 md:text-4xl mb-24 mt-48 mx-4'>
           Trusted and loved by the world’s best teams
         </h1>
 

@@ -4,16 +4,16 @@ import { ImQuotesLeft } from "react-icons/im";
 const Header = () => {
   return (
     <div className='  flex'>
-      <div className='w-[300px] lg:w-2/3  h-[615px] mt-12 bg-[#061237]'>
+      <div className='w-[193300px] sm:screen lg:w-2/3  h-[615px] mt-12 bg-[#061237]'>
         {/* <h1 className='flex text-white justify-center items-center mx-auto text-center'>
           ON top over
         </h1> */}
         <div className='grid grid-cols-2 z-20'>
           <div className='mt-20'>
-            <h1 className='flex text-white text-start justify-center items-center mx-auto font-bold text-5xl '>
+            <h1 className='flex text-white text-start lg:justify-center items-center mx-auto font-bold text-5xl '>
               Built for <br /> enterprise <br /> businesses
             </h1>
-            <div className='mt-20'>
+            <div className='mt-20 hidden lg:block'>
               <h1 className='flex text-white text-start justify-center items-center ml-32'>
                 Opus includes everything you need to build a beautiful website
                 for your business. Built to perform and look good doing so.

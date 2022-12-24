@@ -5,10 +5,16 @@ import { BiDetail } from "react-icons/bi";
 const Features = () => {
   return (
     <div>
-      <section class='px-4  mx-auto max-w-7xl'>
+      <section class='px-4  mx-auto max-w-7xl mt-40 lg:mt-10'>
         <div class='grid items-center grid-cols-1 md:grid-cols-2 '>
           <div>
-            <h2 class='mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl'>
+            <div className='flex mx-1 lg:mx-0'>
+              <div className='h-16 w-16 bg-[#F7F9FC] absolute'></div>
+              <h1 className='text-gray-500 uppercase relative ml-5 mt-5'>
+                Features
+              </h1>
+            </div>
+            <h2 class='mb-4 text-2xl font-extrabold tracking-tight text-start  text-black md:leading-tight sm:text-left md:text-4xl mt-6 '>
               You’re not just doing business. You’re doing life.
             </h2>
             <p class='mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg'>
@@ -34,10 +40,18 @@ const Features = () => {
         </div>
         <div class='grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2'>
           <div class='order-none md:order-2 lg:ml-40'>
-            <h2 class='mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl '>
-              A UI kit that's <br /> mordern and eligent
-            </h2>
-            <p class='mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg'>
+            <div>
+              <div className='flex mx-1 lg:mx-0'>
+                <div className='h-16 w-16 bg-[#F7F9FC] absolute'></div>
+                <h1 className='text-gray-500 uppercase relative ml-5 mt-5'>
+                  Our Knowledge
+                </h1>
+              </div>
+              <h2 class='mb-4 text-2xl font-extrabold tracking-tight text-start  text-black md:leading-tight sm:text-left md:text-4xl mt-6 '>
+                A UI kit that's <br /> mordern and eligent
+              </h2>
+            </div>
+            <p class='mb-5 text-base  text-start  text-gray-600  md:text-lg'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
               repudiandae, exercitationem aut omnis natus doloribus harum nemo
               maiores quasi deleniti quos ad in delectus, ratione atque
