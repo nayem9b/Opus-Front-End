@@ -3,12 +3,12 @@ import React from "react";
 const TrustedBy = () => {
   return (
     <div>
-      <section class='px-4 py-24 mx-auto max-w-7xl'>
-        <h1 class='mb-3 text-3xl font-bold leading-tight text-center text-gray-900 md:text-4xl'>
+      <section class='px-4 mx-auto max-w-7xl mt-24'>
+        <h1 class=' text-3xl font-bold leading-tight text-center text-gray-900 md:text-4xl mb-24 mt-48 '>
           Trusted and loved by the world’s best teams
         </h1>
 
-        <div class='grid grid-cols-1 gap-16 mb-16 text-center lg:grid-cols-4'>
+        <div class='grid grid-cols-1 gap-16  text-center lg:grid-cols-4'>
           <div class='flex items-center justify-center'>
             <img
               class=' mx-auto h-12'

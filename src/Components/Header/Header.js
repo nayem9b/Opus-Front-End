@@ -4,46 +4,45 @@ import { ImQuotesLeft } from "react-icons/im";
 const Header = () => {
   return (
     <div className='  flex'>
-      <div className='w-[53300px] lg:w-2/3  h-[615px] mt-12 bg-[#061237]'>
+      <div className='w-[300px] lg:w-2/3  h-[615px] mt-12 bg-[#061237]'>
         {/* <h1 className='flex text-white justify-center items-center mx-auto text-center'>
           ON top over
         </h1> */}
         <div className='grid grid-cols-2 z-20'>
-          <div>
-            <div class='relative h-32 w-32 bg-slate-300'>
-              <div class='absolute left-0 top-0 h-16 w-16 ...'>01</div>
-            </div>
+          <div className='mt-20'>
             <h1 className='flex text-white text-start justify-center items-center mx-auto font-bold text-5xl '>
               Built for <br /> enterprise <br /> businesses
             </h1>
-            <h1 className='text-white flex text-start justify-center items-center mx-auto'>
-              Opus includes everything you need to build a beautiful website for
-              your business. Built to perform and look good doing so.
-            </h1>
-            <button
-              class='inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500'
-              href='/'>
-              <span class='text-sm font-medium'>Learn more </span>
+            <div className='mt-20'>
+              <h1 className='flex text-white text-start justify-center items-center ml-32'>
+                Opus includes everything you need to build a beautiful website
+                for your business. Built to perform and look good doing so.
+              </h1>
+              <button
+                class='inline-flex items-center rounded border-none bg-[#1355FF] px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 ml-32 mt-10'
+                href='/'>
+                <span class='text-sm font-medium'>Learn more </span>
 
-              <svg
-                class='ml-3 h-5 w-5'
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'>
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
-                  d='M17 8l4 4m0 0l-4 4m4-4H3'
-                />
-              </svg>
-            </button>
+                <svg
+                  class='ml-3 h-5 w-5'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'>
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M17 8l4 4m0 0l-4 4m4-4H3'
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
 
           <div>
             <div>
-              <div className=' ml-96 h-[288px] w-[336px] mt-[362px] relative bg-white z-40'>
+              <div className=' ml-96 h-[288px] w-[336px] mt-[362px] relative bg-white z-40 hidden lg:block'>
                 <div className=''>
                   <div className=' grid grid-rows-2 gap-1 mt-10 ml-12 mr-16 absolute'>
                     <h1>
@@ -73,11 +72,17 @@ const Header = () => {
       <div className=' absolute grid grid-cols-4 z-30'>
         <div></div>
         <div></div>
-        <img
-          src={ceo}
-          className='h-[427px] lg:h-[586px]  w-[342px] lg:w-[470px] mt-28 object-contain'
-          alt=''
-        />
+        <div>
+          <img
+            src={ceo}
+            className='h-[427px] lg:h-[586px]  w-[342px] lg:w-[470px] mt-28 object-contain '
+            alt=''
+          />
+
+          <div class='relative h-28 w-96 bg-[#1355FF] hidden lg:block mt-[-60px]'>
+            <div class='absolute inset-x-0 bottom-0 '></div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -56,7 +56,7 @@ const Navbar = () => {
             <li>
               <a
                 href='/'
-                class='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-600 hover:bg-blue-700 focus:shadow-outline focus:outline-none'
+                class='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#1355FF] hover:bg-[#0644e2] focus:shadow-outline focus:outline-none'
                 aria-label='     Contact us'
                 title='     Contact us'>
                 Contact us

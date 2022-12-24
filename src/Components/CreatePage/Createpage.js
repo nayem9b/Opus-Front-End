@@ -22,7 +22,7 @@ const Createpage = () => {
               <h1 className='text-3xl font-bold'>
                 Choose <br /> your sections
               </h1>
-              <h1 className='w-96 mt-3'>
+              <h1 className=' mt-3'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
                 incidunt dolor omnis deserunt, soluta dolorum facere iste quo
                 impedit earum.
@@ -45,7 +45,7 @@ const Createpage = () => {
               <h1 className='text-3xl font-bold'>
                 Add the images <br /> and text you need
               </h1>
-              <h1 className='w-96 mt-3'>
+              <h1 className=' mt-3'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
                 incidunt dolor omnis deserunt, soluta dolorum facere iste quo
                 impedit earum.
@@ -60,7 +60,7 @@ const Createpage = () => {
             </h1>
           </div>
           <div className='grid grid-rows-2 gap-y-1 sm:gap-y-3 ml-14'>
-            <h1 className='font-normal text-base text-justify w-[429px]'>
+            <h1 className='font-normal text-base text-justify '>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Provident temporibus veniam voluptas ut praesentium eius cum
               accusamus ducimus consectetur nesciunt.
