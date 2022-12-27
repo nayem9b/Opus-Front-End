@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import AboutUs from "../AboutUs/AboutUs";
 import Contact from "../Contact/Contact";
 import DashboardLayout from "../DashBoard/DashboardLayout";
+import Email from "../Email/Email";
 import Errorpage from "../Errorpage/Errorpage";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
@@ -68,14 +69,14 @@ export const router = createBrowserRouter([
           </AdminRoute>
         ),
       },
-      // {
-      //   path: "/dashboard/update",
-      //   element: (
-      //     <AdminRoute>
-      //       <Update></Update>
-      //     </AdminRoute>
-      //   ),
-      // },
+      {
+        path: "/dashboard/allemails",
+        element: (
+          <AdminRoute>
+            <Email></Email>
+          </AdminRoute>
+        ),
+      },
     ],
   },
 ]);
