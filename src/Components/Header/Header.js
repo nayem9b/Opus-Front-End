@@ -3,6 +3,14 @@ import ceo from "../Assets/ceo main cropped.png";
 import { ImQuotesLeft } from "react-icons/im";
 const Header = () => {
   const [headerText, setHeaderText] = useState([]);
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/image`)
+      .then((res) => res.json())
+      .then((data) => setImages(data));
+  }, []);
+  console.log(images);
   useEffect(() => {
     fetch("http://localhost:5000/text")
       .then((res) => res.json())
@@ -82,11 +90,13 @@ const Header = () => {
         <div></div>
         <div></div>
         <div>
-          <img
-            src={ceo}
-            className='h-[427px] lg:h-[586px]  w-[342px] lg:w-[470px] mt-28 object-contain '
-            alt=''
-          />
+          {images.map((image) => (
+            <img
+              src={image.image}
+              className='h-[427px] lg:h-[586px]  w-[342px] lg:w-[470px] mt-28 object-contain '
+              alt=''
+            />
+          ))}
 
           <div class='relative h-28 w-96 bg-[#1355FF] hidden lg:block mt-[-60px]'>
             <div class='absolute inset-x-0 bottom-0 '></div>
