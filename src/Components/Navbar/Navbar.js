@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/company-logo.png";
+import { AuthContext } from "../Context/UserContext";
+import useAdmin from "../Hooks/useAdmin";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user, logout } = useContext(AuthContext);
+  const [isAdmin] = useAdmin(user?.email);
+  const handleLogout = () => {
+    logout();
+    console.log("user logged out");
+  };
   return (
     <div className='sticky top-0 h-16 bg-white z-50'>
       <div class=' px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
@@ -54,6 +62,17 @@ const Navbar = () => {
                 About us
               </a>
             </li>
+            {isAdmin && (
+              <li>
+                <Link
+                  to='/dashboard'
+                  aria-label='About us'
+                  title='Dashboard'
+                  class='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'>
+                  Dashboard
+                </Link>
+              </li>
+            )}
           </ul>
 
           <Link
@@ -63,11 +82,26 @@ const Navbar = () => {
             title='     Contact us'>
             Contact us
           </Link>
-          <Link
-            to='/login'
-            className='ml-3 px-5 py-3 bg-black text-white text-lg rounded-lg hidden lg:block'>
-            Signin
-          </Link>
+          {user ? (
+            <button
+              className='ml-3 px-5 py-3 bg-black text-white text-lg rounded-lg hidden lg:block'
+              onClick={handleLogout}>
+              Log out
+            </button>
+          ) : (
+            <div className='flex'>
+              <Link
+                to='/register'
+                className='ml-3 px-5 py-3 border-black border-2 text-lg rounded-lg hidden lg:block'>
+                Sign up
+              </Link>
+              <Link
+                to='/login'
+                className='ml-3 px-5 py-3 bg-black text-white text-lg rounded-lg hidden lg:block'>
+                Signin
+              </Link>
+            </div>
+          )}
           <div class='lg:hidden'>
             <button
               aria-label='Open Menu'
