@@ -62,9 +62,6 @@ const Update = () => {
               form.reset();
             });
         }
-        // console.log(imgData);
-        // console.log(imgData.data.url);
-        // setPostImage(imgData.data.url);
       });
   };
   return (
@@ -83,7 +80,7 @@ const Update = () => {
                 placeholder='Text'
               />
 
-              <button class='px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#1355FF] rounded-md sm:mx-2 hover:bg-[#033dd1] focus:outline-none focus:bg-blue-600'>
+              <button class='px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#1355FF] rounded-md sm:mx-2 hover:bg-[#033dd1] focus:outline-none focus:bg-blue-600 w-24'>
                 Update
               </button>
             </div>
@@ -102,7 +99,7 @@ const Update = () => {
                 className='file-input file-input-bordered file-input-primary w-full max-w-xs'
               />
 
-              <button class='px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#1355FF] rounded-md sm:mx-2 hover:bg-[#033dd1] focus:outline-none focus:bg-blue-600'>
+              <button class='px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#1355FF] rounded-md sm:mx-2 hover:bg-[#033dd1] focus:outline-none focus:bg-blue-600 w-24'>
                 Upload
               </button>
             </div>

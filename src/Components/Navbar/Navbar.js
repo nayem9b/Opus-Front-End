@@ -156,24 +156,29 @@ const Navbar = () => {
                   </div>
                   <nav>
                     <ul class='space-y-4'>
-                      <li>
-                        <a
-                          href='/'
-                          aria-label=' Overview'
-                          title=' Overview'
-                          class='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'>
-                          Overview
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href='/'
-                          aria-label='    Pages'
-                          title='    Pages'
-                          class='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'>
-                          Pages
-                        </a>
-                      </li>
+                      {isAdmin && (
+                        <>
+                          {" "}
+                          <li>
+                            <Link
+                              href='/dashboard/update'
+                              aria-label=' Overview'
+                              title=' Overview'
+                              class='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'>
+                              Update info
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to='/dashboard/allemails'
+                              aria-label='Pages'
+                              title='Pages'
+                              class='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'>
+                              All emails
+                            </Link>
+                          </li>
+                        </>
+                      )}
                       <li>
                         <a
                           href='/'
