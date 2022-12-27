@@ -2,11 +2,16 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import AboutUs from "../AboutUs/AboutUs";
 import Contact from "../Contact/Contact";
+import DashboardLayout from "../DashBoard/DashboardLayout";
 import Errorpage from "../Errorpage/Errorpage";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import Root from "../Root/Root";
+import SimplePage from "../SimplePage/SimplePage";
+import Update from "../Update/Update";
+import AdminRoute from "./AdminRoute";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +40,33 @@ export const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout></DashboardLayout>,
+    children: [
+      {
+        path: "/dashboard",
+        element: <SimplePage></SimplePage>,
+      },
+
+      {
+        path: "/dashboard/update",
+        element: (
+          <AdminRoute>
+            <Update></Update>
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/allsellers",
+        element: (
+          <AdminRoute>
+            <Update></Update>
+          </AdminRoute>
+        ),
       },
     ],
   },
