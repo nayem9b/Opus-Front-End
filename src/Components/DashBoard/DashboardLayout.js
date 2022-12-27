@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { AuthContext } from "../Context/UserContext";
+import Footer from "../Footer/Footer";
 
 import useAdmin from "../Hooks/useAdmin";
 
@@ -29,16 +30,17 @@ const DashboardLayout = () => {
             {isAdmin && (
               <>
                 <li>
-                  <Link to='/dashboard/allbuyers'>Update info</Link>
+                  <Link to='/dashboard/update'>Update info</Link>
                 </li>
                 <li>
-                  <Link to='/dashboard/allsellers'>All emails</Link>
+                  <Link to='/dashboard/allemails'>All emails</Link>
                 </li>
               </>
             )}
           </ul>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

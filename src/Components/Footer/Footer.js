@@ -1,6 +1,29 @@
 import React from "react";
+import toast from "react-hot-toast";
 import logo from "../Assets/company-logo.png";
 const Footer = () => {
+  const handleEmailSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const payload = {
+      email: email,
+    };
+
+    fetch("http://localhost:5000/dashboard/allemails", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        toast.success("Email sent successfully");
+      });
+    form.reset();
+  };
   return (
     <div>
       <footer aria-label='Site Footer' class='bg-white'>
@@ -8,7 +31,7 @@ const Footer = () => {
           <div class='lg:grid lg:grid-cols-2'>
             <div class='py-8  lg:order-last  lg:py-16 lg:pl-16'>
               <div class='mt-8 space-y-4 lg:mt-0'>
-                <form class='w-full mt-6'>
+                <form onSubmit={handleEmailSubmit} class='w-full mt-6'>
                   <label for='UserEmail' class='sr-only'>
                     {" "}
                     Email{" "}
@@ -18,6 +41,7 @@ const Footer = () => {
                     <input
                       type='email'
                       id='UserEmail'
+                      name='email'
                       placeholder='Email address'
                       class='w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm'
                     />

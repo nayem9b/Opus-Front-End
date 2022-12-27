@@ -45,12 +45,20 @@ export const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <DashboardLayout></DashboardLayout>,
+    element: (
+      <PrivateRoute>
+        <DashboardLayout></DashboardLayout>
+      </PrivateRoute>
+    ),
     children: [
       {
         path: "/dashboard",
         element: <SimplePage></SimplePage>,
       },
+      // {
+      //   path: "/dashboard/update",
+      //   element: <SimplePage></SimplePage>,
+      // },
 
       {
         path: "/dashboard/update",
@@ -60,14 +68,14 @@ export const router = createBrowserRouter([
           </AdminRoute>
         ),
       },
-      {
-        path: "/dashboard/allsellers",
-        element: (
-          <AdminRoute>
-            <Update></Update>
-          </AdminRoute>
-        ),
-      },
+      // {
+      //   path: "/dashboard/update",
+      //   element: (
+      //     <AdminRoute>
+      //       <Update></Update>
+      //     </AdminRoute>
+      //   ),
+      // },
     ],
   },
 ]);
