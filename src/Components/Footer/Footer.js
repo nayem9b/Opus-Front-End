@@ -10,7 +10,7 @@ const Footer = () => {
       email: email,
     };
 
-    fetch("http://localhost:5000/dashboard/allemails", {
+    fetch("https://opus-backend.vercel.app/dashboard/allemails", {
       method: "POST",
       headers: {
         "content-type": "application/json",

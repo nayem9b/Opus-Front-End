@@ -23,7 +23,7 @@ const SignUp = () => {
           email: user.email,
           role: "user",
         };
-        fetch(`http://localhost:5000/userInfo`, {
+        fetch(`https://opus-backend.vercel.app/userInfo`, {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -50,7 +50,7 @@ const SignUp = () => {
       email: email,
       role: "user",
     };
-    fetch(`http://localhost:5000/userInfo`, {
+    fetch(`https://opus-backend.vercel.app/userInfo`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

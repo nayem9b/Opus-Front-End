@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const Email = () => {
   const [emails, setEmails] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/email")
+    fetch("https://opus-backend.vercel.app/email")
       .then((res) => res.json())
       .then((data) => setEmails(data));
   }, []);

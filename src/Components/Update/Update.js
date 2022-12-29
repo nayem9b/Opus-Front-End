@@ -12,7 +12,7 @@ const Update = () => {
     const newText = {
       text: form.text.value,
     };
-    fetch(`http://localhost:5000/text/${email}`, {
+    fetch(`https://opus-backend.vercel.app/text/${email}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
@@ -35,7 +35,7 @@ const Update = () => {
     const image = form.image.files[0];
     const formData = new FormData();
     formData.append("image", image);
-    const url = `https://api.imgbb.com/1/upload?key=${process.env.REACT_APP_IMG_BB_KEY}`;
+    const url = `https://api.imgbb.com/1/upload?key=4879859cdc7827193ef39d9fcfdd7c52`;
 
     fetch(url, {
       method: "POST",
@@ -48,7 +48,7 @@ const Update = () => {
             image: imgData.data.url,
           };
 
-          fetch(`http://localhost:5000/image/${email}`, {
+          fetch(`https://opus-backend.vercel.app/image/${email}`, {
             method: "PATCH",
             headers: {
               "content-type": "application/json",

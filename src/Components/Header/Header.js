@@ -6,13 +6,13 @@ const Header = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/image`)
+    fetch(`https://opus-backend.vercel.app/image`)
       .then((res) => res.json())
       .then((data) => setImages(data));
   }, []);
   console.log(images);
   useEffect(() => {
-    fetch("http://localhost:5000/text")
+    fetch("https://opus-backend.vercel.app/text")
       .then((res) => res.json())
       .then((data) => setHeaderText(data));
   }, [headerText]);
